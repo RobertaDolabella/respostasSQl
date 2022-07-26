@@ -1,0 +1,3 @@
+--SELECT u.name, u.id, sub.name AS city FROM (SELECT * FROM cities WHERE cities.name='Rio de Janeiro')sub  JOIN users u ON sub.id = u."cityId"; 
+--SELECT t.id, users.name AS writer , t."recipientId" AS recipient, t.message FROM testimonials t JOIN users ON users.id=t."writerId";
+--SELECT sub2.*, sub.id, sub.name  FROM (SELECT id, name FROM users WHERE id=30)sub JOIN (SELECT courses.name, schools.name,educations."endDate", educations."userId" AS id FROM educations JOIN courses ON educations."courseId"=courses.id JOIN schools ON educations."schoolId"=schools.id)sub2 ON sub.id=sub2.id; 
